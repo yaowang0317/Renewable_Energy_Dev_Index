@@ -1,0 +1,13 @@
+{% import "helpers/forms.html" as forms %}
+{% block title %}Welcome to Flask Tracking!{% endblock %}
+{% block content %}
+
+<form action="/site" method="POST">
+<fieldset>
+<legend>Ticker symbol: </legend>
+{{ forms.render(site_form) }}
+<p><input type="Submit" value="Submit"></p>
+</fieldset>
+</form>
+
+{% endblock content %}
